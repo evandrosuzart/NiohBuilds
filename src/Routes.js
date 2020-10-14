@@ -1,61 +1,59 @@
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
-import HomePage from './pages/HomePage';
-import BuildHome from './pages/build/BonusBuild';
-import BuildStatus from './pages/build/BuildStatus';
-import BonusBuild from './pages/build/BonusBuild';
-import BuildWeapons from './pages/build/BuildWeapons';
-import BuildProtections from './pages/build/BuildProtections';
-import Guardioes from './pages/build/Guardioes';
-import Habilidades from './pages/build/Habilidades';
-import ItensAtalho from './pages/build/ItensAtalho'
-import Cla from './pages/build/Cla';
-import Masters from './pages/contatos/Masters';
-import Comunity from './pages/contatos/Comunity';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
+import {
+    BonusBuild,
+    BuildProtections,
+    BuildWeapons,
+    Cla,
+    BuildHome,
+    BuildStatus,
+    Habilidades,
+    Guardioes,
+    ItensAtalho
+} from './pages/build'
+import HomePage from './pages/HomePage'
+import { Comunity, Masters } from './pages/contatos'
 
-const AppNavigator = createStackNavigator(
-  {
+const AppNavigator = createStackNavigator({
     HomePage: {
-      screen: HomePage,
+        screen: HomePage,
     },
     BuildStatus: {
-      screen: BuildStatus,
+        screen: BuildStatus,
     },
     BuildHome: {
-      screen: BuildHome,
+        screen: BuildHome,
     },
     BonusBuild: {
-      screen: BonusBuild,
+        screen: BonusBuild,
     },
     BuildWeapons: {
-      screen: BuildWeapons,
+        screen: BuildWeapons,
     },
     BuildProtections: {
-      screen: BuildProtections,
+        screen: BuildProtections,
     },
     ItensAtalho: {
-      screen: ItensAtalho,
+        screen: ItensAtalho,
     },
     Guardioes: {
-      screen: Guardioes,
+        screen: Guardioes,
     },
     Habilidades: {
-      screen: Habilidades,
+        screen: Habilidades,
     },
     Cla: {
-      screen: Cla,
+        screen: Cla,
     },
     Masters: {
-      screen: Masters,
+        screen: Masters,
     },
     Comunity: {
-      screen: Comunity,
+        screen: Comunity,
     },
-  },
-  {
+}, {
     initialRouteName: 'HomePage',
-  },
-);
+}, );
 
 const AppContainer = createAppContainer(AppNavigator);
 

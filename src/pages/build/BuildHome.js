@@ -1,53 +1,57 @@
-import React from 'react';
+import React from "react";
 
-import {Text, View} from 'react-native';
-import {styles} from './Styles';
-import {Button} from 'react-native-elements';
+import { Text, View } from "react-native";
+import { styles } from "../../../assets/styles/Styles";
+import { Button } from "react-native-elements";
 
 const BuildHome = (props) => {
-  const {navigate} = props.navigation;
+  const { navigate } = props.navigation;
 
-  const title = props.navigation.getParam('title', '');
+  const title = props.navigation.getParam("title", "");
   const goStatus = () => {
-    navigate('BuildStatus', props.navigation.getParam('status', {}));
+    navigate("BuildStatus", props.navigation.getParam("status", {}));
   };
   const goBonusConjunto = () => {
-    navigate('BonusBuild', {gracas: props.navigation.getParam('gracas', [])});
+    navigate("BonusBuild", {
+      gracas: props.navigation.getParam("gracas", []),
+    });
   };
   const goWeapons = () => {
-    navigate('BuildWeapons', {armas: props.navigation.getParam('armas', [])});
+    navigate("BuildWeapons", {
+      armas: props.navigation.getParam("armas", []),
+    });
   };
   const goProtections = () => {
-    navigate('BuildProtections', {
-      protecao: props.navigation.getParam('protecao', []),
+    navigate("BuildProtections", {
+      protecao: props.navigation.getParam("protecao", []),
     });
   };
 
   const goAtalho = () => {
-    navigate('ItensAtalho', {
-      itensAtalho: props.navigation.getParam('itensAtalho', []),
+    navigate("ItensAtalho", {
+      itensAtalho: props.navigation.getParam("itensAtalho", []),
     });
   };
   const goSpirits = () => {
-    navigate('Guardioes', {
-      guardioes: props.navigation.getParam('guardioes', []),
+    navigate("Guardioes", {
+      guardioes: props.navigation.getParam("guardioes", []),
     });
   };
   const goSkills = () => {
-    navigate('Habilidades', {
-      habilidades: props.navigation.getParam('habilidades', []),
+    navigate("Habilidades", {
+      habilidades: props.navigation.getParam("habilidades", []),
     });
   };
 
   const goCla = () => {
-    navigate('Cla', {
-      cla: props.navigation.getParam('cla', {}),
+    navigate("Cla", {
+      cla: props.navigation.getParam("cla", {}),
     });
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>{title}</Text>
+      <Text style={styles.title}> {title} </Text>
       <View style={styles.btnPages}>
         <Button
           type="clear"
@@ -56,7 +60,6 @@ const BuildHome = (props) => {
           onPress={goStatus}
         />
       </View>
-
       <View style={styles.btnPages}>
         <Button
           type="clear"
@@ -65,7 +68,6 @@ const BuildHome = (props) => {
           onPress={goBonusConjunto}
         />
       </View>
-
       <View style={styles.btnPages}>
         <Button
           title="Armas da Build"
@@ -106,7 +108,6 @@ const BuildHome = (props) => {
           onPress={goSkills}
         />
       </View>
-
       <View style={styles.btnPages}>
         <Button
           title="Clã Ideal"

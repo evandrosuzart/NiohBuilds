@@ -1,32 +1,32 @@
 {
-  "expo": {
-    "name": "Nioh e Souls Brothers",
-    "slug": "nioh-and-souls-brothers",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/favicon.png",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "updates": {
-      "fallbackToCacheTimeout": 0
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.evandrosuzart.niohandsoulsbrothers"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "description": "Projeto de estudos com o intuito de compartilhar conhecimentos no jogo nioh",
-    "githubUrl": "https://github.com/evandrosuzart/NiohBuilds",
-    "android": {
-      "package": "com.evandrosuzart.niohandsoulsbrothers"
+    "expo": {
+        "name": "Nioh e Souls Brothers",
+        "slug": "nioh-and-souls-brothers",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/images/favicon.png",
+        "splash": {
+            "image": "./assets/images/splash.png",
+            "resizeMode": "contain",
+            "backgroundColor": "#ffffff"
+        },
+        "updates": {
+            "fallbackToCacheTimeout": 0
+        },
+        "assetBundlePatterns": [
+            "**/*"
+        ],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.evandrosuzart.niohandsoulsbrothers"
+        },
+        "web": {
+            "favicon": "./assets/images/favicon.png"
+        },
+        "description": "Projeto de estudos com o intuito de compartilhar conhecimentos no jogo nioh",
+        "githubUrl": "https://github.com/evandrosuzart/NiohBuilds",
+        "android": {
+            "package": "com.evandrosuzart.niohandsoulsbrothers"
+        }
     }
-  }
 }

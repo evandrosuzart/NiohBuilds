@@ -1,4 +1,4 @@
-import  BonusBuild from './BonusBuild'
+import BonusBuild from './BonusBuild'
 import BuildHome from './BuildHome'
 import BuildProtections from './BuildProtections'
 import BuildStatus from './BuildStatus'
@@ -9,12 +9,14 @@ import Habilidades from './Habilidades'
 import ItensAtalho from './ItensAtalho'
 
 
-export const  {BonusBuild,
-BuildHome,
-BuildProtections,
-BuildStatus,
-BuildWeapons,
-Cla,
-Guardioes,
-Habilidades,
-ItensAtalho,}
+export {
+    BonusBuild,
+    BuildHome,
+    BuildProtections,
+    BuildStatus,
+    BuildWeapons,
+    Cla,
+    Guardioes,
+    Habilidades,
+    ItensAtalho,
+}
