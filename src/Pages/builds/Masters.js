@@ -9,7 +9,7 @@ const Masters = () => {
   };
 
   const mestres = getMestres().map((item, index) => {
-    return {title: item, id: index};
+    return {title: item, id: `${index}`};
   });
 
   const Item = ({title, id}) => (

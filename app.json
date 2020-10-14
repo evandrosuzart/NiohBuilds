@@ -1,6 +1,31 @@
 {
-  "name": "NiohBuilds",
-  "android": {
-    "package": "com.niohbuilds"
+  "expo": {
+    "name": "Nioh e Souls Brothers",
+    "slug": "nioh-and-souls-brothers",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/favicon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "Projeto de estudos com o intuito de compartilhar conhecimentos no jogo nioh",
+    "githubUrl": "https://github.com/evandrosuzart/NiohBuilds",
+    "android": {
+      "package": "com.evandrosuzart.niohandsoulsbrothers"
+    }
   }
 }
