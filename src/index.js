@@ -1,0 +1,11 @@
+import React from 'react';
+
+import 'react-native-gesture-handler';
+
+import AppContainer from './Routes';
+
+const App = () => {
+  return <AppContainer />;
+};
+
+export default App;
