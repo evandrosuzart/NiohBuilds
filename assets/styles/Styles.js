@@ -17,8 +17,10 @@ export const styles = StyleSheet.create({
     maxWidth: 200,
     paddingLeft: 35,
     paddingTop: 25,
+    flex:1,
   },
   title: {
+    paddingTop:15,
     fontSize: 25,
     fontWeight: 'bold',
     fontStyle: 'italic',
@@ -36,4 +38,9 @@ export const styles = StyleSheet.create({
     color: '#0e5a60',
     textAlign: 'center',
   },
+  columnButtons :{
+    flex:1,
+    flexDirection:'column',
+    justifyContent:'center',
+  }
 });

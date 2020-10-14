@@ -1,9 +1,9 @@
 import React from 'react';
 
-import {SafeAreaView, Text, SectionList, View} from 'react-native';
-import {styles} from './Styles';
-const BonusBuild = (props) => {
-  const gracas = props.navigation.getParam('gracas', []);
+import {SectionList, SafeAreaView, View, Text} from 'react-native';
+import {styles} from '../../../assets/styles/Styles';
+const BuildProtections = (props) => {
+  const protecao = props.navigation.getParam('protecao', []);
   const Item = ({title}) => (
     <View>
       <Text style={styles.itemListText}>{title}</Text>
@@ -12,7 +12,7 @@ const BonusBuild = (props) => {
   return (
     <SafeAreaView>
       <SectionList
-        sections={gracas}
+        sections={protecao}
         keyExtractor={(item, index) => item + index}
         renderItem={({item}) => <Item title={item} />}
         renderSectionHeader={({section: {title}}) => (
@@ -23,4 +23,4 @@ const BonusBuild = (props) => {
   );
 };
 
-export default BonusBuild;
+export default BuildProtections;

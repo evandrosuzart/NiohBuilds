@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, SectionList, SafeAreaView, View} from 'react-native';
-import {styles} from './Styles';
+import {styles} from '../../../assets/styles/Styles';
 const Guardioes = (props) => {
   const guardioes = props.navigation.getParam('guardioes', []);
 

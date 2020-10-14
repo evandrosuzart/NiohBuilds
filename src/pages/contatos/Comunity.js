@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, Clipboard, FlatList, SafeAreaView, View} from 'react-native';
 import {Button} from 'react-native-elements';
-import {styles} from './Styles';
+import {styles} from '../../../assets/styles/Styles';
 import {getLinks} from '../../buildinfos/index';
 const Comunity = () => {
   const writeToClipboard = async (text) => {

@@ -1,9 +1,10 @@
 import React from 'react';
 
-import {SafeAreaView, SectionList, Text, View} from 'react-native';
-import {styles} from './Styles';
-const BuildWeapons = (props) => {
-  const armas = props.navigation.getParam('armas', []);
+import {SafeAreaView, Text, SectionList, View} from 'react-native';
+import {styles} from '../../../assets/styles/Styles';
+const Habilidades = (props) => {
+  const habilidades = props.navigation.getParam('habilidades', []);
+
   const Item = ({title}) => (
     <View>
       <Text style={styles.itemListText}>{title}</Text>
@@ -12,7 +13,7 @@ const BuildWeapons = (props) => {
   return (
     <SafeAreaView>
       <SectionList
-        sections={armas}
+        sections={habilidades}
         keyExtractor={(item, index) => item + index}
         renderItem={({item}) => <Item title={item} />}
         renderSectionHeader={({section: {title}}) => (
@@ -23,4 +24,4 @@ const BuildWeapons = (props) => {
   );
 };
 
-export default BuildWeapons;
+export default Habilidades;

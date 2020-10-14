@@ -1,6 +1,6 @@
 import React from 'react';
 import {Text, FlatList, SafeAreaView, View} from 'react-native';
-import {styles} from './Styles';
+import {styles} from '../../../assets/styles/Styles';
 const ItensAtalho = (props) => {
   const itensAtalho = props.navigation
     .getParam('itensAtalho', [])

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Text, View} from 'react-native';
-import {styles} from './Styles';
+import {styles} from '../../../assets/styles/Styles';
 const BonusBuild = (props) => {
   const cla = props.navigation.getParam('cla', {});
   const {title, opcional, observacao} = cla;

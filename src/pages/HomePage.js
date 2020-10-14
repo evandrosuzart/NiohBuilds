@@ -2,7 +2,7 @@ import React from 'react';
 import {Button} from 'react-native-elements';
 import {ScrollView, Text, View} from 'react-native';
 import {getBuilds} from '../buildinfos';
-import {styles} from './builds/Styles';
+import {styles} from '././../../assets/styles/Styles';
 const HomePage = (props) => {
   const {navigate} = props.navigation;
   const builds = getBuilds();
@@ -41,21 +41,22 @@ const HomePage = (props) => {
           <Text style={styles.title} />
 
           <Text style={styles.title}>Builds</Text>
-          <ScrollView>
+          <ScrollView >
             {builds.map((build, index) => (
               <View style={styles.btnPages} key={`${index}`}>
-                <Button
-                  type="clear"
-                  titleStyle={styles.btnTitle}
-                  title={build.props.title}
-                  onPress={() => {
-                    goToBuildHomePage(build.props);
-                  }}
-                />
-              </View>
+                
+                  <Button
+                    type="clear"
+                    titleStyle={styles.btnTitle}
+                    title={build.props.title}
+                    onPress={() => {
+                      goToBuildHomePage(build.props);
+                    }}
+                  />
+                </View>
             ))}
           </ScrollView>
-        </View>
+          </View>
       </View>
     </View>
   );

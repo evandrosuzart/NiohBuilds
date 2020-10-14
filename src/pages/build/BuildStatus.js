@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {Text, View} from 'react-native';
-import {styles} from './Styles';
+import {styles} from '../../../assets/styles/Styles';
 const BuildStatus = (props) => {
   const corpo = props.navigation.getParam('corpo', '');
   const essencia = props.navigation.getParam('essencia', '');
